@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { States } from './States';
-import Login from './Pages/Login/Login';
-import Signup from './Pages/Signup/Signup';
+import Login from '../Pages/Login';
+import Signup from '../Pages/Signup';
 
 function App() {
   return (

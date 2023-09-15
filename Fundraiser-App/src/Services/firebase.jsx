@@ -6,7 +6,12 @@ import { serverTimestamp } from "firebase/firestore";
 
 
 const firebaseConfig = {
-   
+  apiKey: "AIzaSyDemNvVoyiMmZOkBawJOfwyVbIMaljLksU",
+  authDomain: "fundraiser-by-harry.firebaseapp.com",
+  projectId: "fundraiser-by-harry",
+  storageBucket: "fundraiser-by-harry.appspot.com",
+  messagingSenderId: "599110230367",
+  appId: "1:599110230367:web:f2b855d60548a2fedd56ea"
   };
 
 // Initialize Firebase

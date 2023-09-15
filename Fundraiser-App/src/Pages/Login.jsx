@@ -1,10 +1,12 @@
-import './Login.css';
+import '../Assets/css/Login.css';
 import { FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { TextField } from '@mui/material';
+import { useStates } from '../Services/States';
 
 function Login() {
 
+  const{googleLogin,navigate} =useStates();
   return (
     <>
       <div className='login-page'>
@@ -24,12 +26,12 @@ function Login() {
           </div>
 
           <div className='loginbtn-div'>
-            <button className='login-btn'>Sign In</button>
+            <button className='login-btn' onClick={()=>navigate("/home")}>Sign In</button>
           </div>
           </form>
 
           <div className='google-div'>
-            <button className='google-btn'><FaGoogle /> - Sign-in with Google</button>
+            <button onClick={googleLogin} className='google-btn'><FaGoogle /> - Sign-in with Google</button>
           </div>
 
           <div className='signuplink-div'>
