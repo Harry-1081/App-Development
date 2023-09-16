@@ -2,7 +2,6 @@ import { useState } from 'react';
 import '../Assets/css/Signup.css';
 
 function Signup() {
-
   const validateSignupData = (e) => {
     e.preventDefault()
     if(username==="")
